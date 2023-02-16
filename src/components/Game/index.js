@@ -122,8 +122,7 @@ const Game = () => {
 	useEffect(() => {
 		const levelBaseScore = 1000;
 		const nextLevel = level + 1;
-		const nextLevelScore =
-			(levelBaseScore * nextLevel * nextLevel * nextLevel) / 5;
+		const nextLevelScore = (levelBaseScore * nextLevel) ;
 		console.log("Current level: ", level);
 		console.log("Score to next level:", nextLevelScore);
 		console.log("Remaining: ", nextLevelScore - score);
